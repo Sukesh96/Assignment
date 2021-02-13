@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+
+    <!--Main Navbar Start-->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="./index.html"><i class="fas fa-home"></i></a>
+            </div>
+            <div class="navbar-links">
+                <ul class="navbar-lists">
+                    <li class="navbar-list-item dropdown">
+                        <a href="./index.html">Home</a>
+                        <div class="dropdown-content">
+                            <a href="#">SubMenu1</a>
+                            <a href="#">SubMenu2</a>
+                            <a href="#">SubMenu3</a>
+                        </div>
+                    </li>
+                    <li class="navbar-list-item"><a href="./about.html">About</a></li>
+                    <li class="navbar-list-item"><a href="./contact.html" class="active-nav">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main Navbar End-->
+
+    <main class="main-section">
+        <div class="main-section-title">
+            <h2>Contact</h2>
+        </div>
+        <div class="main-section-breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                <li><a>/</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <main class="main-content">
+        <div class="main-content-box box-1">
+            <h2 class="form-heading">Send Us Your Message</h2>
+            <form action="#" method="POST">
+                <label for="fullname">Enter Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required />
+
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" placeholder="Enter Valid Email ID" required />
+
+                <label for="contact">Contact No.</label>
+                <input type="number" id="contact" name="contact" placeholder="Enter Contact Number" required />
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+        <div class="main-content-box box-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192866!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1613132022412!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </main>
+
+    <!--Main Footer Start-->
+    <footer class="main-footer">
+        <div class="footer-section-1">
+            <div class="footer-address">
+                <h2>Address</h2>
+                <p>1234, B-Block, New Delhi - 110001</p>
+            </div>
+            <div class="footer-links">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section-2">
+            <h2>Copyright © 2021. All Rights Reserved</h2>
+        </div>
+    </footer>
+    <!--Main Footer End-->
+</body>
+</html>

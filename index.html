@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body onload="displayPopup()">
+
+    <div class="popup-container show-backdrop">
+        <div class="popup show-popup">
+            <h2>Welcome To My Site</h2>
+            <button type="button" onclick="closePopup()">Visit Site</button>
+        </div>
+    </div>
+    
+
+    <!--Main Navbar Start-->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="./index.html"><i class="fas fa-home"></i></a>
+            </div>
+            <div class="navbar-links">
+                <ul class="navbar-lists">
+                    <li class="navbar-list-item dropdown">
+                        <a href="./index.html" class="active-nav">Home</a>
+                        <div class="dropdown-content">
+                            <a href="#">SubMenu1</a>
+                            <a href="#">SubMenu2</a>
+                            <a href="#">SubMenu3</a>
+                        </div>
+                    </li>
+                    <li class="navbar-list-item"><a href="./about.html">About</a></li>
+                    <li class="navbar-list-item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main Navbar End-->
+
+    <!--Main Carousel Section Start-->
+    <main class="main-section">
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                <img src="./images/Glacier.jpg" alt="Mountains">
+                <div class="carousel-text">
+                    <h2 style="color:rgb(161, 161, 161)">Caption Text 1</h2>
+                </div>
+            </div>
+            <div class="carousel-slides">
+                <img src="./images/pexels-photo-1183099.jpeg" alt="Mountains">
+                <div class="carousel-text">
+                    <h2 style="color:rgb(255, 255, 255)">Caption Text 2</h2>
+                </div>
+            </div>
+            <div class="carousel-slides">
+                <img src="./images/pexels-photo-67517.jpeg" alt="Mountains">
+                <div class="carousel-text">
+                    <h2 style="color:rgb(0, 0, 0)">Caption Text 3</h2>
+                </div>
+            </div>
+            <button class="prev" onclick="slides(-1)">&#10094;</button>
+            <button class="next" onclick="slides(1)">&#10095;</button>
+        </div>
+    </main>
+    <!--Main Carousel Section End-->
+
+    <div class="card-heading">
+        <h1>Visit Our Places</h1>
+    </div>
+
+    <!--Main Content Section Start-->
+    <div class="container">
+        <div class="card">
+            <img src="./images/pexels-aarti-vijay-2693529.jpg" alt="Apple" width="250px" height="200px">
+            <div class="card-list" id="card-1">
+                <h3>Sunset</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus eos.</p>
+            </div>
+        </div>
+        
+        <div class="card" id="card-2">
+            <img src="./images/pexels-roberto-shumski-1903702.jpg" alt="Orange" width="250px" height="200px">
+            <div class="card-list">
+                <h3>Mountains</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus eos.</p>
+            </div>    
+        </div>
+        
+        <div class="card" id="card-3">
+            <img src="./images/pexels-ryan-holloway-427900.jpg" alt="Strawberry" width="250px" height="200px">
+            <div class="card-list">
+                <h3>Crescent Moon</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus eos.</p>
+            </div> 
+        </div>
+    </div>
+    <!--Main Content Section End-->
+
+    <!--Main Footer Start-->
+    <footer class="main-footer">
+        <div class="footer-section-1">
+            <div class="footer-address">
+                <h2>Address</h2>
+                <p>1234, B-Block, New Delhi - 110001</p>
+            </div>
+            <div class="footer-links">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section-2">
+            <h2>Copyright © 2021. All Rights Reserved</h2>
+        </div>
+    </footer>
+    <!--Main Footer End-->
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
