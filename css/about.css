@@ -1,0 +1,130 @@
+body{
+    background-color: #fff;
+}
+
+.main-section{
+    width: 100vw;
+    height: 500px;
+    background-image: url("https://images.pexels.com/photos/2832061/pexels-photo-2832061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 100px;
+    transition: 0.5s;
+}
+
+
+.main-section-title h2{
+    font-family: roboto;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:rgb(187, 63, 41);
+    background-color: rgba(255, 255, 255, 0.308);
+    padding: 4px 16px; 
+    border-radius: 2px;
+}
+.main-section-breadcrumb{
+    background-color:rgba(128, 128, 128, 0.308);
+    padding: 0px 16px;
+    margin-left: 200px;
+}
+
+.main-section-breadcrumb .breadcrumb{
+    list-style-type: none;
+    display: flex;
+}
+.main-section-breadcrumb .breadcrumb li{
+    padding: 8px;
+}
+.main-section-breadcrumb .breadcrumb a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-family: roboto;
+    letter-spacing: 1px;
+}
+
+.main-content{
+    padding: 32px;
+    width: 80vw;
+    margin: 50px auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70% 300px;
+    grid-column-gap: 40px;
+}
+
+
+.box-1{
+    border: 0.5px solid #ccc; 
+    border-radius: 5px;
+    background-color: #fff;
+}
+.box-1 h2{
+    padding-left: 50px;
+    padding-top: 60px;
+    font-family: Montserrat;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+.box-1 p{
+    padding: 20px 50px 20px 50px;
+    font-family: montserrat;
+    text-align: justify;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.7;
+    color: rgb(128, 128, 128);
+}
+
+.box-2 img{
+    border-radius: 5px;
+}
+
+@media(max-width:1000px){
+    .main-section{
+        max-width:1000px;
+        height:450px;
+        background-size: 1000px 450px;
+        background-position: center center;
+        transition: 0.5s;
+    }
+}
+
+@media(max-width: 576px){
+    .main-section{
+        flex-direction: column;
+    }
+    .main-section-breadcrumb{
+        margin-left:0;
+    }
+}
+
+@media(max-width:1000px){
+    .main-content{
+        display: flex;
+        margin: 20px auto;
+    }
+}
+@media(max-width:900px){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:550px){
+    .main-content{
+        margin:0;
+        padding:0;
+    }
+    .box-1{
+        width: 100% !important;
+    }
+    .box-2{
+        width: 100% !important;
+    }
+}
